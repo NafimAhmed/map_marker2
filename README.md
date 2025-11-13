@@ -2,11 +2,7 @@
 
 > Bring your **Flutter UI** onto **Google Maps** – not just icons, but *any* widget.
 
-<p align="center">
-  <a href="https://ibb.co.com/3yydzcQp">
-    <img src="https://ibb.co.com/3yydzcQp" alt="dynamic_marker demo" width="320">
-  </a>
-</p>
+![Linear Date Picker Demo](https://ibb.co.com/3yydzcQp)
 
 ### Add **ANY Flutter Widget** as a Google Maps Marker
 
