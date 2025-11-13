@@ -2,7 +2,7 @@
 
 > Bring your **Flutter UI** onto **Google Maps** – not just icons, but *any* widget.
 
-![Linear Date Picker Demo](https://ibb.co.com/3yydzcQp)
+![Linear Date Picker Demo](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHh0ZTh6NmllcHg3cnFpOGxycWxpcWszNHU4b3YwMXdyZm11MW05ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4GgydqhMTi7Mz2ggr/giphy.gif)
 
 ### Add **ANY Flutter Widget** as a Google Maps Marker
 
@@ -55,6 +55,10 @@ Perfect for building **rich, dynamic map interfaces**.
 
 ---
 
+
+
+
+
 ## 📦 Installation
 
 Add this to your project's `pubspec.yaml`:
@@ -62,5 +66,92 @@ Add this to your project's `pubspec.yaml`:
 ```yaml
 dependencies:
   google_maps_flutter: ^2.9.0
-  dynamic_marker:
-    path: ../dynamic_marker    # or use the pub.dev version when published
+  dynamic_marker: ^0.0.5
+
+
+```
+## Usage
+
+Then import
+
+```dart
+import 'package:dynamic_marker/dynamic_marker.dart';
+```
+
+Then use this code
+
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:dynamic_marker/dynamic_marker.dart';
+
+class DynamicMarkerExample extends StatelessWidget {
+  const DynamicMarkerExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: DynamicMarkerGoogleMap(
+        initialCameraPosition: const CameraPosition(
+          target: LatLng(23.7808, 90.2794), // Example: Dhaka
+          zoom: 13,
+        ),
+        dynamicMarkers: [
+          DynamicMarker(
+            position: const LatLng(23.7808, 90.2794),
+            anchor: Alignment.bottomCenter,
+            child: Container(
+              width: 160,
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black26,
+                    blurRadius: 8,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.network(
+                      "https://picsum.photos/120",
+                      height: 80,
+                      width: 120,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  const Text(
+                    "Premium Location",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 4),
+                  ElevatedButton(
+                    onPressed: () {
+                      // TODO: Open details page / bottom sheet
+                    },
+                    child: const Text("Open Details"),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+
+
+```

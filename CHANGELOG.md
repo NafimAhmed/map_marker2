@@ -1,3 +1,56 @@
+
+## 0.0.5
+
+### ✨ What's New
+- Added full README redesign with attractive visuals and demo screenshot.
+- Improved documentation for setup, installation, and use cases.
+- Added clearer explanation for widget-based dynamic markers.
+
+### 🛠 Improvements
+- More polished example markers (card style, bubble markers, etc.)
+- Code cleanup and structure improvements for easier integration.
+
+### 🪲 Fixes
+- Minor layout alignment fix for marker anchoring.
+- Smoother marker position update during map movements.
+
+---
+
+
+## 0.0.4
+
+### ✨ What's New
+- Added full README redesign with attractive visuals and demo screenshot.
+- Improved documentation for setup, installation, and use cases.
+- Added clearer explanation for widget-based dynamic markers.
+
+### 🛠 Improvements
+- More polished example markers (card style, bubble markers, etc.)
+- Code cleanup and structure improvements for easier integration.
+
+### 🪲 Fixes
+- Minor layout alignment fix for marker anchoring.
+- Smoother marker position update during map movements.
+
+---
+
+## 0.0.3
+
+### ✨ What's New
+- Added full README redesign with attractive visuals and demo screenshot.
+- Improved documentation for setup, installation, and use cases.
+- Added clearer explanation for widget-based dynamic markers.
+
+### 🛠 Improvements
+- More polished example markers (card style, bubble markers, etc.)
+- Code cleanup and structure improvements for easier integration.
+
+### 🪲 Fixes
+- Minor layout alignment fix for marker anchoring.
+- Smoother marker position update during map movements.
+
+---
+
 ## 0.0.2
 
 ### ✨ What's New

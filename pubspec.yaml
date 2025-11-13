@@ -1,6 +1,6 @@
 name: dynamic_marker
 description: "Google Map er upor jekono Flutter widget diye dynamic marker overlay korar package."
-version: 0.0.2
+version: 0.0.5
 homepage: https://github.com/NafimAhmed/map_marker2
 
 environment:
